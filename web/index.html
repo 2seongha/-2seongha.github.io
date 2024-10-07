@@ -40,7 +40,11 @@
       window.Padding?.postMessage('complete');
     }
     function receivePadding(top,bottom,left,right){
-      console.log(top, bottom, left, right);
+      console.log('ttttttoooooooopppppppppp');
+      console.log('ttttttoooooooopppppppppp');
+      console.log('ttttttoooooooopppppppppp');
+      console.log('ttttttoooooooopppppppppp');
+      console.log('ttttttoooooooopppppppppp');
       const event = new CustomEvent('flutterMessage', { detail: {top,bottom,left,right} });
       window.dispatchEvent(event);
     }

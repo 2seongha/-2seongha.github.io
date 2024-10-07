@@ -30452,7 +30452,7 @@ if("Padding" in p){window.toString
 p=typeof console!="undefined"
 p.toString
 if(p)window.console.log("Message sent to Flutter mobile via Padding.postMessage.")
-window["Padding.postMessage"]("complete")}else{window.toString
+window.Padding.postMessage("complete")}else{window.toString
 p=typeof console!="undefined"
 p.toString
 if(p)window.console.log("Padding.postMessage is not available.")}p=window

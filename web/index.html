@@ -60,6 +60,7 @@
     }
 
     function receivePadding(message) {
+      window.Padding.postMessage(message);
       console.log('Message from Flutter Mobile: ' + message);
       alert('Message from Flutter Mobile: ' + message);
     }

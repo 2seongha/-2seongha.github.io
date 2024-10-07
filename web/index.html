@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -28,28 +27,22 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="icon" type="image/png" href="favicon.png"/>
 
   <title>iflow_app_alpha</title>
   <link rel="manifest" href="manifest.json">
 </head>
-
 <body>
   <script src="flutter_bootstrap.js" async></script>
   <script>
-    function sendPadding(message) {
-      if (window.Padding)
-        window.Padding?.postMessage('complete');
+    function sendPadding(message){
+      if(window.Padding)
+      window.Padding?.postMessage('complete');
     }
-    function receivePadding(top, bottom, left, right) {
-      const event = new CustomEvent('FlutterMessage', {
-        detail: {
-          top, bottom, left, right
-        }
-      });
+    function receivePadding(top,bottom,left,right){
+      const event = new CustomEvent('flutterMessage', { detail: {top,bottom,left,right} });
       window.dispatchEvent(event);
     }
   </script>
 </body>
-
 </html>

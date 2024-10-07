@@ -107510,7 +107510,8 @@ A.aYW.prototype={
 $1(a){return A.b2v(a)},
 $S:238}
 A.aYX.prototype={
-$1(a){A.cL("Message received from JS: "+A.j(B.Tn.gazl(t.v_.a(a))))},
+$1(a){A.cL("Message received from JS: "+A.j(a))
+B.Tn.gazl(t.v_.a(a))},
 $S:604}
 A.Yp.prototype={
 dt(a,b){var s,r,q,p,o,n=null,m=$.bn.bE(new A.co(n,n,t.hm),t.P5)

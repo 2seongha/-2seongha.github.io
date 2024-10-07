@@ -43,6 +43,10 @@
     const event = new CustomEvent('flutterMessage', { detail: {top,bottom,left,right} });
     window.dispatchEvent(event);
   }
+  function toggleTheme(theme){
+    if(window.Theme)
+    window.Theme?.postMessage(theme);
+  }
 </script>
 </body>
 </html>

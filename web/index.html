@@ -40,7 +40,8 @@
       window.Padding?.postMessage('complete');
     }
     function receivePadding(message){
-      return message;
+      const event = new CustomEvent('FlutterMessage', { message: message });
+      window.dispatchEvent(event);
     }
   </script>
 </body>

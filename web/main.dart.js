@@ -30407,11 +30407,10 @@ var $async$b3d=A.G(function(a,b){if(a===1)return A.C(b,r)
 while(true)switch(s){case 0:A.cC("----- webview \ud1b5\uc2e0 \uad00\ub828 -----")
 q=window
 q.toString
-if("sendPadding" in q)window.sendPadding("complete")
-q=window
+if("sendPadding" in q){q=window
 q.toString
 B.aoL.aws(q,"flutterMessage",new A.aZ8())
-return A.D(null,r)}})
+window.sendPadding("complete")}return A.D(null,r)}})
 return A.E($async$b3d,r)},
 aYb(){var s=0,r=A.F(t.a6),q
 var $async$aYb=A.G(function(a,b){if(a===1)return A.C(b,r)

@@ -46,9 +46,13 @@
     window.onload = function() {
       console.log(window.Padding);
       // Flutter로 메시지 전송 (JavaScriptChannel)
-      // if (window.Padding) {
+      while(window.Padding){
         window.Padding.postMessage("Page fully loaded");
-      // }
+
+      }
+      if (window.Padding) {
+        window.Padding.postMessage("Page fully loaded");
+      }
     };
 
     function receivePadding(message) {

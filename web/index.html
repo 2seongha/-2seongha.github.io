@@ -38,7 +38,7 @@
 
   function receivePadding(top,bottom,left,right){
     const event = new CustomEvent('flutterMessage', { detail: {top,bottom,left,right} });
-    window.dispatchEvent(event);
+    window.dispatchEvent(event); 
   }
 </script>
 </body>

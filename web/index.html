@@ -34,43 +34,14 @@
 </head>
 <body>
   <script>
-    // Flutter 모바일에서 메시지를 받는 함수 정의
-    // document.addEventListener('DOMContentLoaded', function() {
-    //   console.log('DOM fully loaded and parsed');
-    //   // Flutter로 메시지 전송 (JavaScriptChannel)
-    //   if (window.channel) {
-    //     window.channel.postMessage("Hello from Flutter Web!");
-    //   }
-    // });
-
-    // window.onload = function() {
-    //   console.log(window.Padding);
-    //   // Flutter로 메시지 전송 (JavaScriptChannel)
-    //   while(window.Padding == undefined){
-    //     console.log(window.Padding);
-    //     // window.Padding.postMessage("Page fully loaded");
-    //   }
-    //   if (window.Padding) {
-    //     window.Padding.postMessage("Page fully loaded");
-    //   }
-    // };
-
     function sendPadding(message){
       window.Padding.postMessage(message);
     }
 
     function receivePadding(top, bottom, left, right) {
-      window.Padding.postMessage('complete');
+      // window.Padding.postMessage('complete');
       console.log('Message from Flutter Mobile: ');
     }
-
-    // function sendMessageToFlutter() {
-    //     if (window.channel) {
-    //       window.channel.postMessage("Hello from Flutter Web!");
-    //     } else {
-    //       console.error("channel not available.");
-    //     }
-    //   }
   </script>
   <script src="flutter_bootstrap.js" async></script>
 </body>

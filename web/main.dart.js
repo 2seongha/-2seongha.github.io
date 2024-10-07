@@ -30448,7 +30448,7 @@ s=6
 return A.H($.Rt().FO(0,o),$async$Dk)
 case 6:p=window
 p.toString
-if("Padding" in p){window.Padding.postMessage("Hello from Flutter Web")
+if("Padding" in p){window["Padding.postMessage"]("complete")
 A.cC("Message sent to Flutter mobile via Padding.postMessage.")}else A.cC("Padding.postMessage is not available.")
 p=window
 p.toString

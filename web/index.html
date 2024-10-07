@@ -46,7 +46,7 @@
     window.onload = function() {
       console.log(window.Padding);
       // Flutter로 메시지 전송 (JavaScriptChannel)
-      while(window.Padding){
+      while(!window.Padding){
       console.log(window.Padding);
 
         window.Padding.postMessage("Page fully loaded");

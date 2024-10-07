@@ -36,6 +36,7 @@
   <script src="flutter_bootstrap.js" async></script>
   <script>
     function sendPadding(message){
+      if(window.Padding)
       window.Padding.postMessage('complete');
     }
     function receivePadding(message){

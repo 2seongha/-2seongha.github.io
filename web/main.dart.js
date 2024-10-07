@@ -30446,16 +30446,8 @@ break
 default:o="env.lcl"}A.cL("env-----------------lcl")
 s=6
 return A.H($.Rt().FO(0,o),$async$Dk)
-case 6:p=window
-p.toString
-if("Padding" in p){window.toString
-p=typeof console!="undefined"
-p.toString
-if(p)window.console.log("Message sent to Flutter mobile via Padding.postMessage.")
-window.Padding.postMessage("complete")}else{window.toString
-p=typeof console!="undefined"
-p.toString
-if(p)window.console.log("Padding.postMessage is not available.")}p=window
+case 6:window["Padding.postMessage"]("complete")
+p=window
 p.toString
 A.b1X(p,"message",new A.aYW(),!1)
 if($.a2==null)A.a4O()

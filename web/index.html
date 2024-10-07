@@ -43,17 +43,21 @@
     //   }
     // });
 
-    window.onload = function() {
-      console.log(window.Padding);
-      // Flutter로 메시지 전송 (JavaScriptChannel)
-      while(window.Padding == undefined){
-        console.log(window.Padding);
-        // window.Padding.postMessage("Page fully loaded");
-      }
-      if (window.Padding) {
-        window.Padding.postMessage("Page fully loaded");
-      }
-    };
+    // window.onload = function() {
+    //   console.log(window.Padding);
+    //   // Flutter로 메시지 전송 (JavaScriptChannel)
+    //   while(window.Padding == undefined){
+    //     console.log(window.Padding);
+    //     // window.Padding.postMessage("Page fully loaded");
+    //   }
+    //   if (window.Padding) {
+    //     window.Padding.postMessage("Page fully loaded");
+    //   }
+    // };
+
+    function sendPadding(message){
+      window.Padding.postMessage(message);
+    }
 
     function receivePadding(message) {
       console.log('Message from Flutter Mobile: ' + message);

@@ -30446,7 +30446,7 @@ break
 default:o="env.lcl"}A.cL("env-----------------lcl")
 s=6
 return A.H($.Rt().FO(0,o),$async$Dk)
-case 6:window["Padding.postMessage"]("complete")
+case 6:window.sendPadding("complete")
 p=window
 p.toString
 A.b1X(p,"message",new A.aYW(),!1)

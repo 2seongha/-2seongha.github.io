@@ -59,10 +59,9 @@
       window.Padding.postMessage(message);
     }
 
-    function receivePadding(message) {
-      window.Padding.postMessage(message);
-      console.log('Message from Flutter Mobile: ' + message);
-      alert('Message from Flutter Mobile: ' + message);
+    function receivePadding(top, bottom, left, right) {
+      window.Padding.postMessage('complete');
+      console.log('Message from Flutter Mobile: ');
     }
 
     // function sendMessageToFlutter() {

@@ -35,6 +35,10 @@
 <body>
 <script src="flutter_bootstrap.js" async></script>
 <script>
+  function sendPadding(message){
+    if(window.Padding)
+    window.Padding?.postMessage('complete');
+  }
   function receivePadding(top,bottom,left,right){
     const event = new CustomEvent('flutterMessage', { detail: {top,bottom,left,right} });
     window.dispatchEvent(event);

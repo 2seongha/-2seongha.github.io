@@ -47,6 +47,10 @@
     if(window.Theme)
     window.Theme?.postMessage(theme);
   }
+  window.addEventListener("flutter-first-frame", function() {
+     if(window.Load)
+     window.Load?.postMessage('complete');
+  });
 </script>
 </body>
 </html>

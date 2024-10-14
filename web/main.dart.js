@@ -30519,7 +30519,7 @@ break
 default:o="env.lcl"}A.cL("env-----------------lcl")
 s=6
 return A.H($.DB().FP(0,o),$async$Do)
-case 6:window.webview_load("complete")
+case 6:window.webview_load()
 if($.a2==null)A.a4R()
 p=$.a2
 p.toString

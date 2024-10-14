@@ -110257,26 +110257,26 @@ case 2:return A.C(o,r)}})
 return A.E($async$t1,r)},
 q0(){var s=0,r=A.F(t.z),q,p=this,o,n,m,l
 var $async$q0=A.G(function(a,b){if(a===1)return A.C(b,r)
-while(true)switch(s){case 0:l=$.b_f()
+while(true)switch(s){case 0:window.webview_logout()
+o=$.b_f()
 s=3
-return A.H(l.F(0,"tokenStatus"),$async$q0)
+return A.H(o.F(0,"tokenStatus"),$async$q0)
 case 3:s=4
-return A.H(l.F(0,"accessToken"),$async$q0)
+return A.H(o.F(0,"accessToken"),$async$q0)
 case 4:s=5
-return A.H(l.F(0,"refreshToken"),$async$q0)
-case 5:l=p.r
-o=l.bI(0,$.aiz().gcA(),t.Hn)
-n=$.bhx()
+return A.H(o.F(0,"refreshToken"),$async$q0)
+case 5:o=p.r
+n=o.bI(0,$.aiz().gcA(),t.Hn)
+m=$.bhx()
 s=6
-return A.H(n.oJ(0,"deviceToken"),$async$q0)
-case 6:m=b
-o.tw(m==null?"":m,"")
+return A.H(m.oJ(0,"deviceToken"),$async$q0)
+case 6:l=b
+n.tw(l==null?"":l,"")
 s=7
-return A.H(n.F(0,"deviceToken"),$async$q0)
+return A.H(m.F(0,"deviceToken"),$async$q0)
 case 7:$.b8s.cf().b8(0)
 A.cL("\ub85c\uadf8\uc778 \ud1a0\ud070 \uc0ad\uc81c \uc644\ub8cc")
-window.webview_logout()
-q=l.bI(0,$.aiA(),t.aq).Hw("login")
+q=o.bI(0,$.aiA(),t.aq).Hw("login")
 s=1
 break
 case 1:return A.D(q,r)}})

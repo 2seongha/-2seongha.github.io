@@ -35,21 +35,25 @@
 <body>
 <script src="flutter_bootstrap.js" async></script>
 <script>
-  function sendPadding(message){
+  function webview_sendPadding(){
     if(window.Padding)
     window.Padding?.postMessage('complete');
   }
-  function receivePadding(top,bottom,left,right){
-    const event = new CustomEvent('flutterMessage', { detail: {top,bottom,left,right} });
+  function webview_receivePadding(top,bottom,left,right){
+    const event = new CustomEvent('webview_receivePadding', { detail: {top,bottom,left,right} });
     window.dispatchEvent(event);
   }
-  function toggleTheme(theme){
+  function webview_theme(theme){
     if(window.Theme)
     window.Theme?.postMessage(theme);
   }
-  function loadComplete(theme){
+  function webview_load(){
      if(window.Load)
      window.Load?.postMessage('complete');
+  }
+  function webview_logout(){
+     if(window.Auth)
+     window.Auth?.postMessage('logout');
   }
 </script>
 </body>

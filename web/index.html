@@ -65,9 +65,9 @@
     window.dispatchEvent(event);
   }
 
-  function receiveUserInfo(userInfo){
-    console.log('userInfo' +userInfo);
-    const event = new CustomEvent('receiveUserInfo', { detail: `${userInfo}` });
+  function receiveUserInfo(userInfo) {
+    console.log('userInfo: ' + userInfo); // 올바른 출력
+    const event = new CustomEvent('receiveUserInfo', { detail: userInfo });
     window.dispatchEvent(event);
   }
 </script>

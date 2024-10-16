@@ -54,6 +54,21 @@
       window.Auth?.postMessage(JSON.stringify({key:'logout'}));
      }
   }
+
+  function receivePadding(top,bottom,left,right){
+    const event = new CustomEvent('receivePadding', { detail: {top, bottom, left, right} });
+    window.dispatchEvent(event);
+  }
+
+  function receiveToken(accessToken, refreshToken){
+    const event = new CustomEvent('receiveToken', { detail: {accessToken, refreshToken} });
+    window.dispatchEvent(event);
+  }
+
+   function receiveUserInfo(userInfo){
+    const event = new CustomEvent('receiveUserInfo', { detail: userInfo });
+    window.dispatchEvent(event);
+  }
 </script>
 </body>
 </html>

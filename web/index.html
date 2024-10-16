@@ -66,8 +66,8 @@
   }
 
   function receiveUserInfo(userInfo){
-    console.log('userInfo' + userInfo);
-    const event = new CustomEvent('receiveUserInfo', { detail: userInfo });
+    console.log('userInfo' + JSON.parse(userInfo));
+    const event = new CustomEvent('receiveUserInfo', { detail: JSON.parse(userInfo) });
     window.dispatchEvent(event);
   }
 </script>

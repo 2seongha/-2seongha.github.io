@@ -66,6 +66,7 @@
   }
 
   function receiveUserInfo(userInfo){
+    console.log('userInfo' + userInfo);
     const event = new CustomEvent('receiveUserInfo', { detail: userInfo });
     window.dispatchEvent(event);
   }

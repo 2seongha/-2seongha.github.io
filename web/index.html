@@ -35,32 +35,24 @@
 <body>
 <script src="flutter_bootstrap.js" async></script>
 <script>
-
-  function webview_sendPadding(){
-    if(window.Padding)
-    window.Padding?.postMessage('complete');
-  }
-  function webview_receivePadding(top,bottom,left,right){
-    const event = new CustomEvent('webview_receivePadding', { detail: {top, bottom, left, right} });
-    window.dispatchEvent(event);
+  function initWebview(){
+    if(window.Init){
+      window.Init?.postMessage(JSON.stringify({key:'padding'}));
+      window.Init?.postMessage(JSON.stringify({key:'token'}));
+      window.Init?.postMessage(JSON.stringify({key:'userInfo'}));
+    }
   }
 
-  function webview_sendToken(){
-    if(window.Token)
-    window.Token?.postMessage('complete');
-  }
-  function webview_receiveToken(accessToken, refreshToken){
-    const event = new CustomEvent('webview_receiveToken', { detail: {accessToken, refreshToken} });
-    window.dispatchEvent(event);
+  function webviewTheme(theme){
+    if(window.Init){
+      window.Init?.postMessage(JSON.stringify({key:'theme',value:theme}));
+    }
   }
 
-  function webview_theme(theme){
-    if(window.Theme)
-    window.Theme?.postMessage(theme);
-  }
-  function webview_logout(){
-     if(window.Auth)
-     window.Auth?.postMessage('logout');
+  function webviewLogout(){
+     if(window.Auth){
+      window.Auth?.postMessage(JSON.stringify({key:'logout'}));
+     }
   }
 </script>
 </body>

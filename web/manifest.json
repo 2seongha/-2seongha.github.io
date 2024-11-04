@@ -1,6 +1,6 @@
 {
-    "name": "iflow_app_alpha",
-    "short_name": "iflow_app_alpha",
+    "name": "part2_insta_clone",
+    "short_name": "part2_insta_clone",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

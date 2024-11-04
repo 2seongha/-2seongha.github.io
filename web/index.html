@@ -14,7 +14,7 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-  <base href="/web/">
+  <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -23,53 +23,16 @@
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="iflow_app_alpha">
+  <meta name="apple-mobile-web-app-title" content="part2_insta_clone">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>iflow_app_alpha</title>
+  <title>part2_insta_clone</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
-<script src="flutter_bootstrap.js" async></script>
-<script>
-  function initWebview(){
-    if(window.Init){
-      window.Init?.postMessage(JSON.stringify({key:'padding'}));
-      window.Init?.postMessage(JSON.stringify({key:'token'}));
-      window.Init?.postMessage(JSON.stringify({key:'userInfo'}));
-    }
-  }
-
-  function webviewTheme(theme){
-    if(window.Init){
-      window.Init?.postMessage(JSON.stringify({key:'theme',value:theme}));
-    }
-  }
-
-  function webviewLogout(){
-     if(window.Auth){
-      window.Auth?.postMessage(JSON.stringify({key:'logout'}));
-     }
-  }
-
-  function receivePadding(top,bottom,left,right){
-    const event = new CustomEvent('receivePadding', { detail: {top, bottom, left, right} });
-    window.dispatchEvent(event);
-  }
-
-  function receiveToken(accessToken, refreshToken){
-    const event = new CustomEvent('receiveToken', { detail: {accessToken, refreshToken} });
-    window.dispatchEvent(event);
-  }
-
-  function receiveUserInfo(userInfo) {
-    console.log('userInfo: ' + userInfo); // 올바른 출력
-    const event = new CustomEvent('receiveUserInfo', { detail: userInfo });
-    window.dispatchEvent(event);
-  }
-</script>
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
